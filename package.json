@@ -20,6 +20,7 @@
     "gulp-imagemin": "^5.0.3",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.1",
+    "http-proxy-middleware": "^0.19.1",
     "minify": "^4.1.0",
     "node-sass": "^4.11.0",
     "pump": "^3.0.0",

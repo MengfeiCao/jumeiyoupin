@@ -8,6 +8,7 @@ const uglify = require('gulp-uglify');
 const pump = require('pump');
 const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
+const proxy = require('http-proxy-middleware')
 
 // 地址配置区
 const paths = {
@@ -31,9 +32,22 @@ gulp.task("connect", function() {
         connect.server({
             port: 8080,
             root: "./dist",
-            livereload: true
-        });
-    });
+            livereload: true,
+            middleware: function(connect, opt) {
+                return proxyList
+            }});
+});
+
+// 服务器代理
+const proxyList = 
+    [
+        proxy('/sign',  {
+            target: 'http://www.baidu.com',
+            pathRewrite: {'/sign' : '/'}, // 重写路径
+            changeOrigin:true
+        })
+    ]
+
 
 
 // 实时更新区
