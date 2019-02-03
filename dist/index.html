@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./stylesheets/index.css">
-    <link rel="stylesheet" href="../sass/index.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
     <title>聚美优品</title>
 </head>
 <body>
     <header>
+        <!-- 顶部 -->
         <div class="head-container">
             <div class="head-left">
                 <p>欢迎来到聚美优品！</p>
@@ -18,16 +19,195 @@
             </div>
             <div class="head-right">
                 <div><a href="">正品保证</a></div>
-                <div><a href=""></a></div>
-                <div><a href=""></a></div>
-                <div><a href=""></a></div>
-                <div><a href=""></a></div>
-                <div><a href=""></a></div>
+                <div><a href="">订单查询</a></div>
+                <div><a href="">❤收藏的名牌</a></div>
+                <div><a href="">我的聚美</a>
+                    <ul class="myjumei">
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">我的现金券</a></li>
+                        <li><a href="">我的红包</a></li>
+                        <li><a href="">我的余额</a></li>
+                        <li><a href="">我的提现退款</a></li>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">我的心愿单</a></li>
+                        <li><a href="">会员中心</a></li>
+                        <li><a href="">礼品卡兑换</a></li>
+                    </ul>
+                </div>
+                
+                <div class="phone"><a href="">手机聚美</a></div>
+                <div><a href="">更多</a>
+                    <ul class="more">
+                        <li><a href="">邀请好友</a></li>
+                        <li><a href="">加入收藏</a></li>
+                        <li><a href="">新浪微博</a>
+                            <p class="sina"><img src="./images/sina_er.png" alt=""></p>
+                        </li>
+                        <li><a href="">聚美微信</a>
+                            <p class="weixin"><img src="./images/jumei_weixin_header1.png" alt=""></p>
+                        </li>
+                        <li><a href="">百度贴吧</a></li>
+                        <li><a href="">腾讯微博</a>
+                            <p class="tengxun"><img src="./images/qq_er.png" alt=""></p>
+                        </li>
+                        <li><a href="">人人公众主页</a>
+                            <p class="renren"><img src="./images/renren_er.png" alt=""></p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
+
     </header>
+
+
+    <!-- 搜索区 -->
+    <div class="serch-container">
+        <div class="logo"></div>
+        <div class="serch">
+            <div class="serch-center">
+                <input type="text">
+                <button>搜索</button>
+            </div>
+            <ul>
+                <li><a href="">保湿</a></li>
+                <li><a href="">面膜</a></li>
+                <li><a href="">洗面奶</a></li>
+                <li><a href="">补水</a></li>
+                <li><a href="">香水</a></li>
+                <li><a href="">眼霜</a></li>
+                <li><a href="">口红</a></li>
+                <li><a href="">护肤套装</a></li>
+                <li><a href="">BB霜</a></li>
+            </ul>
+        </div>
+        <div class="cart">
+            <a href="">去购物车结算</a>
+            <p>购物车中还没有商品，<br>快去挑选心爱的商品吧！</p>
+        </div>
+    </div>
+
+    <!-- menu -->
+    <div class="menu-container">
+        <div class="menu">
+            <div class="menu-left">
+                <ul>
+                    <li><a class="active" href="">首页</a></li>
+                    <li><a href="">极速免税店</a></li>
+                    <li><a href="">母婴特卖</a></li>
+                    <li><a href="">美妆商城</a>
+                        <table>
+                            <tr>
+                                <td class="border_none"><img src="./images/menu-meizhuang.jpg" alt=""></td>
+                                <td>
+                                    <h6>国际大牌</h6>
+                                    <ul>
+                                        <li>兰蔻</li>
+                                        <li>娇韵诗</li>
+                                        <li>伊丽莎白雅顿</li>
+                                        <li>雅诗兰黛</li>
+                                        <li>欧莱雅</li>
+                                        <li>兰芝</li>
+                                        <li>倩碧</li>
+                                        <li>雅漾</li>
+                                        <li>菲诗小铺</li>
+                                        <li>悦诗风吟</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <h6>护肤</h6>
+                                    <ul>
+                                        <li>洁面</li>
+                                        <li>爽肤水</li>
+                                        <li>精华</li>
+                                        <li>乳液</li>
+                                        <li>面霜</li>
+                                        <li>眼霜</li>
+                                        <li>面膜</li>
+                                        <li>护肤套装</li>
+                                    </ul>
+                                </td>
+                                <td class="right_none">
+                                    <h6>彩妆</h6>
+                                    <ul>
+                                        <li>卸妆</li>
+                                        <li>BB霜</li>
+                                        <li>粉底液</li>
+                                        <li>粉饼</li>
+                                        <li>眼影</li>
+                                        <li>眼线笔</li>
+                                        <li>睫毛膏</li>
+                                        <li>眉笔</li>
+                                        <li>口红</li>
+                                        <li>腮红</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border_none"><img src="./images/meizhuang-huli.jpg" alt=""></td>
+                                <td class="bottom_none">
+                                    <h6>香氛</h6>
+                                    <ul>
+                                        <li>女士香水</li>
+                                        <li>男士香水</li>
+                                        <li>中性香水</li>
+                                        <li>Q版香水</li>
+                                        <li>香水套装</li>
+                                        <li>精油</li>
+                                    </ul>
+                                </td>
+                                <td class="bottom_none">
+                                    <h6>男士专区</h6>
+                                    <ul>
+                                        <li>洁面</li>
+                                        <li>爽肤水</li>
+                                        <li>面霜</li>
+                                        <li>精华</li>
+                                        <li>护肤套装</li>
+                                        <li>洗发</li>
+                                        <li>沐浴</li>
+                                    </ul>
+                                </td>
+                                <td class="right_none bottom_none">
+                                    <h6>热门搜索</h6>
+                                    <ul>
+                                        <li>面膜贴</li>
+                                        <li>洗面奶</li>
+                                        <li>唇膏</li>
+                                        <li>去黑头</li>
+                                        <li>祛斑</li>
+                                        <li>隔离</li>
+                                        <li>祛痘</li>
+                                        <li>去角质</li>
+                                        <li>指甲油</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li><a href="">国际轻奢</a></li>
+                    <li><a href="">服装运动</a></li>
+                    <li><a href="">鞋包首饰</a></li>
+                </ul>
+            </div>
+            <div class="menu-right">
+                <ul>
+                    <li><a href="">真</a></li>
+                    <li><a href="">30</a></li>
+                    <li><a href="">坦克</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- banner -->
+    <div class="banner-container">
+
+
+    </div>
     
 </body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 <script src="../javascripts/index.js"></script>
 </html>
