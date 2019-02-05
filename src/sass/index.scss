@@ -340,4 +340,94 @@ header{
     background: url(../images/banner.jpg) no-repeat center;
 }
 
+// 今日疯抢/明日预告 标题
+.todayTom-container{
+    margin: 20px 0;
+    .todayTom{
+        border: 1px solid #666;
+        width: 468px;
+        margin: 0 auto;
+        div{
+            width: 234px;
+            height: 46px;
+            line-height: 46px;
+            font-size: 20px;
+            color: #333;
+            float: left;
+            text-align: center;
+            font-weight: bold;
+        }
+        div span.tomNum{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #ea1d5d;
+            font-size: 12px;
+            color: white;
+            line-height: 25px;
+            margin-left: 5px;
+        }
+        div.active{
+            color: white;
+            background: #666;
+            position: relative;
+        }
+        div.active::after{
+            content: "";
+            width: 0;
+            height: 0;
+            border: 10px solid white;
+            position: absolute;
+            left: 50%;
+            top: 47px;
+            border-top-color: #666;
+        }
+    }
+    .todayTom:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
 
+
+// 今日疯抢-content
+.today-content{
+    display: none;
+    width: 1090px;
+    margin: 0 auto;
+    .content{
+        width: 1100px;
+        margin-left: 3px;
+        a{
+            width: 535px;
+            height: 212px;
+            display: inline-block;
+            border-top: 1px solid black;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+// 明日-content
+.tom-content{
+    // display: none;
+    width: 1090px;
+    margin: 0 auto;
+    .content{
+        width: 1100px;
+        margin-left: 3px;
+        a{
+            width: 535px;
+            height: 212px;
+            display: inline-block;
+            border-top: 1px solid black;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

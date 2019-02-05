@@ -301,3 +301,75 @@ header {
   width: 100%;
   height: 350px;
   background: url(../images/banner.jpg) no-repeat center; }
+
+.todayTom-container {
+  margin: 20px 0; }
+  .todayTom-container .todayTom {
+    border: 1px solid #666;
+    width: 468px;
+    margin: 0 auto; }
+    .todayTom-container .todayTom div {
+      width: 234px;
+      height: 46px;
+      line-height: 46px;
+      font-size: 20px;
+      color: #333;
+      float: left;
+      text-align: center;
+      font-weight: bold; }
+    .todayTom-container .todayTom div span.tomNum {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #ea1d5d;
+      font-size: 12px;
+      color: white;
+      line-height: 25px;
+      margin-left: 5px; }
+    .todayTom-container .todayTom div.active {
+      color: white;
+      background: #666;
+      position: relative; }
+    .todayTom-container .todayTom div.active::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border: 10px solid white;
+      position: absolute;
+      left: 50%;
+      top: 47px;
+      border-top-color: #666; }
+  .todayTom-container .todayTom:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.today-content {
+  display: none;
+  width: 1090px;
+  margin: 0 auto; }
+  .today-content .content {
+    width: 1100px;
+    margin-left: 3px; }
+    .today-content .content a {
+      width: 535px;
+      height: 212px;
+      display: inline-block;
+      border-top: 1px solid black;
+      margin-right: 10px;
+      margin-bottom: 10px; }
+
+.tom-content {
+  width: 1090px;
+  margin: 0 auto; }
+  .tom-content .content {
+    width: 1100px;
+    margin-left: 3px; }
+    .tom-content .content a {
+      width: 535px;
+      height: 212px;
+      display: inline-block;
+      border-top: 1px solid black;
+      margin-right: 10px;
+      margin-bottom: 10px; }
