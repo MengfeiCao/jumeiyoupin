@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./stylesheets/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
     <title>聚美优品</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
                 <div><a href="">正品保证</a></div>
                 <div><a href="">订单查询</a></div>
                 <div><a href="">❤收藏的名牌</a></div>
-                <div><a href="">我的聚美</a>
+                <div class="head_myjumei"><a href="">我的聚美</a>
                     <ul class="myjumei">
                         <li><a href="">我的订单</a></li>
                         <li><a href="">我的现金券</a></li>
@@ -204,6 +204,24 @@
     <!-- banner -->
     <div class="banner-container">
 
+        <!-- ---------swiper start--------------------- -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/banner1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/banner2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/banner3.jpg" alt=""></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <!-- ---------swiper end--------------------- -->
 
     </div>
 
@@ -264,8 +282,6 @@
                     <div class="count"><span>36</span>人已购买</div>
                 </div>
             </div>
-            
-
         </div>
     </div>
 
@@ -332,11 +348,13 @@
     <!-- 左侧固定栏 -->
     <ul class="fixed-left">
         <li>聚美<br>首页</li>
-        <li><a>每日必看</a></li>
+        <li class=""><a>每日必看</a></li>
         <li><a>上新单品</a></li>
     </ul>
 
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-<script src="../javascripts/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+<script src="./javascripts/index.js"></script>
+
 </html>

@@ -50,6 +50,9 @@ header{
             div{
                 float: left;
                 margin-right: 20px;
+                a:hover{
+                    color: #ed145b;
+                }
             }
 
         }
@@ -62,6 +65,9 @@ header{
             float: right;
             width: 460px;
             position: relative;
+            a:hover{
+                color: #ed145b;
+            }
             div{
                 float: left;
                 margin-right: 15px;
@@ -72,8 +78,9 @@ header{
                     box-sizing: border-box;
                     padding:10px;
                     border: 1px solid #ddd;
+                    border-top: none;
                     box-shadow: 0 0 5px #ddd;
-                    left: 168px;
+                    left: 197px;
                     top: 29px;
                 }
                 .more{
@@ -128,6 +135,11 @@ header{
                     }
                 }
             };
+            div.head_myjumei{
+                width: 77px;
+                height: 30px;
+                text-align: center;
+            }
             div.phone
             {
                 
@@ -339,6 +351,14 @@ header{
     width: 100%;
     height: 350px;
     background: url(../images/banner.jpg) no-repeat center;
+    .swiper-container{
+        width: 1200px;
+        height:350px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 // 今日疯抢/明日预告 标题
@@ -772,6 +792,7 @@ header{
 
 // 左侧固定栏
 .fixed-left{
+    display:none;
     position: fixed;
     left: 0;
     top:40%;
