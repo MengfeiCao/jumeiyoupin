@@ -82,4 +82,35 @@ function change(item) {
 
   big_img.src = bigSrc;
   normal_img.src = normalSrc;
+} // 倒计时
+
+
+var nowdate = new Date();
+var future = new Date("2019/2/18");
+
+var _day = _(".day");
+
+var _hour = _(".hour");
+
+var _minutes = _(".minute");
+
+var _second = _(".second"); // // console.log(nowdate,future);
+// daojishi();
+
+
+setInterval(daojishi, 1000);
+
+function daojishi() {
+  var Dtime = future.getTime() - nowdate.getTime();
+  var difference_day = parseInt(Dtime / 1000 / 3600 / 24);
+  var hour = parseInt(Dtime / 1000 / 3600);
+  var minute = parseInt((Dtime - hour * 60 * 60 * 1000) / 1000 / 60);
+  var second = parseInt((Dtime - hour * 1000 * 3600 - minute * 60 * 1000) / 1000);
+  _day.innerHTML = difference_day; // console.log(_day,difference_day);
+
+  _hour.innerHTML = hour;
+  _minutes.innerHTML = minute;
+  _second.innerHTML = second;
 }
+
+;

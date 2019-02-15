@@ -138,5 +138,75 @@ function ajaxPost(url,data){
     })
 }
 
+// -----------------------倒计时差值封装------------------
+function downCount(dateString){
+    // 获取未来时间和现在时间的时间差 ms
+    var target = new Date(dateString);
+    var now = new Date();
+    var Dtime = target.getTime() - now.getTime();
+    // 获取时间差的时分秒
+    var hour = parseInt(Dtime / 1000 / 3600);
+    var minute = parseInt((Dtime - (hour * 60 *60 * 1000 )) / 1000 / 60);
+    var second = parseInt((Dtime - hour * 60 *60 * 1000 - minute * 60 * 1000) / 1000);
+    var ms = Dtime % 1000;
+    // 补零；
+    // if(dateString < 10){
+    // dateString = "0" + dateString;
+    // }
+    // function buling(num){
+    // num < 10 ? "0" + num : num ;
+    // }
+    // 返回值
+    return {
+    hour : hour ,
+    minute : minute ,
+    second : second ,
+    ms : ms
+    }
+}
 
+// 使用
+// function mydownCount(){
+//     var newYear = downCount("2019/2/17");
+//     // console.log(newYear)
 
+//     _hour.innerHTML = newYear.hour;
+//     _minute.innerHTML = newYear.minute;
+//     _second.innerHTML = newYear.second;
+
+// }
+// mydownCount();
+// setInterval(mydownCount,1000);
+
+//jsonp封装
+ //第一个参数是数据路径，第二个参数是前后端约定的字段名
+ function jsonp(url,jsonp_key){
+    return new Promise(function(resolve,reject){
+
+          // 函数名随机处理避免占用命名空间，避免冲突;
+
+          var randomName = "_" + Date.now()
+          console.log(randomName);
+
+          window[randomName] = function(res){
+                // console.log(res);
+                resolve(res);
+          }
+          // 2. 创建并插入script标签;
+          var script = document.createElement("script");
+
+          // 当前url之中是否存在 ? （存在问好表示已经有数据了），我应该用& 去拼接数据，反之则用 ?;
+          url = url + (/\?/.test(url) ? "&" : "?") + jsonp_key + "=" + randomName;
+
+          script.src = url;
+          // 3. 标签放入页面之中;
+          document.body.appendChild(script);
+          // 4. 清理垃圾;
+          script.onload = function(){
+                this.remove();
+
+                window[randomName] = null;
+                delete window[randomName];
+          }
+    })
+}

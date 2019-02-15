@@ -91,7 +91,7 @@ header{
                     padding:10px;
                     border: 1px solid #ddd;
                     box-shadow: 0 0 5px #ddd;
-                    left: 306px;
+                    left: 340px;
                     top: 29px;
                     .sina{
                         display: none;
@@ -139,6 +139,14 @@ header{
                 width: 77px;
                 height: 30px;
                 text-align: center;
+            }
+            div.head_myjumei:hover ul{
+                display: block;
+                z-index: 999;
+            }
+            div:nth-child(6):hover ul{
+                display: block;
+                z-index: 999;
             }
             div.phone
             {
@@ -282,6 +290,7 @@ header{
                     }
                     table{
                         display: none;
+                        background: #fff;
                         position: absolute;
                         left: 0;
                         top: 40px;
@@ -328,6 +337,10 @@ header{
                         }
                         
                     }
+                }
+                li:nth-child(4):hover table{
+                    display: block;
+                    z-index: 999;
                 }
             }
         }
@@ -421,7 +434,7 @@ header{
 
 // 今日疯抢-content
 .today-content{
-    display: none;
+    // display: none;
     width: 1090px;
     margin: 0 auto;
     .content{
@@ -442,7 +455,7 @@ header{
 
 // 明日-content
 .tom-content{
-    // display: none;
+    display: none;
     width: 1090px;
     margin: 0 auto;
     .content{

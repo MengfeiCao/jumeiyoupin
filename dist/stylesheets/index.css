@@ -114,7 +114,7 @@ header {
           padding: 10px;
           border: 1px solid #ddd;
           box-shadow: 0 0 5px #ddd;
-          left: 306px;
+          left: 340px;
           top: 29px; }
           header .head-container .head-right div .more .sina {
             display: none;
@@ -156,6 +156,12 @@ header {
         width: 77px;
         height: 30px;
         text-align: center; }
+      header .head-container .head-right div.head_myjumei:hover ul {
+        display: block;
+        z-index: 999; }
+      header .head-container .head-right div:nth-child(6):hover ul {
+        display: block;
+        z-index: 999; }
       header .head-container .head-right div.phone a {
         color: #ed145b;
         display: inline-block;
@@ -264,6 +270,7 @@ header {
             background: #ed145b; }
           .menu-container .menu .menu-left ul li table {
             display: none;
+            background: #fff;
             position: absolute;
             left: 0;
             top: 40px; }
@@ -296,6 +303,9 @@ header {
               border-right: none; }
             .menu-container .menu .menu-left ul li table tr td.bottom_none {
               border-bottom: none; }
+        .menu-container .menu .menu-left ul li:nth-child(4):hover table {
+          display: block;
+          z-index: 999; }
     .menu-container .menu .menu-right {
       float: right;
       height: 38px; }
@@ -367,7 +377,6 @@ header {
     clear: both; }
 
 .today-content {
-  display: none;
   width: 1090px;
   margin: 0 auto; }
   .today-content .content {
@@ -382,6 +391,7 @@ header {
       margin-bottom: 10px; }
 
 .tom-content {
+  display: none;
   width: 1090px;
   margin: 0 auto; }
   .tom-content .content {
