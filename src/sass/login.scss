@@ -19,138 +19,172 @@ html {overflow-y: scroll;}
 body,html{
     width: 100%;
     height: 100%;
-    background: #f7f7f7;
 }
 
 // 最顶部
 header{
-    width: 100%;
-    height: 30px;
-    box-sizing: border-box;
-    border-top: 1px solid #b6b4b6;
-    border-bottom: 1px solid #e5e5e5;
-    background: #f2f2f2;
     .head-container{
-        width: 100%;
+        width: 964px;
         margin: 0 auto;
-        box-sizing: border-box;
-        padding: 0 95px 0 130px;
-        font-size: 12px;
-        line-height: 30px;
-        & a{
-            color: #6c6c6c;
-        }
-        .head-left{
+        .head-logo{
             float: left;
-            p{
-                color: #6c6c6c;
-                float: left;
-                margin-right: 20px;
-            }
-            div{
-                float: left;
-                margin-right: 20px;
-            }
-
-        }
-        .head-left：after{
-            content: "";
-            clear: both;
-            display: block;
         }
         .head-right{
             float: right;
-            width: 460px;
-            position: relative;
-            div{
-                float: left;
-                margin-right: 15px;
-                .myjumei{
-                    display: none;
-                    position: absolute;
-                    background: white;
-                    box-sizing: border-box;
-                    padding:10px;
-                    border: 1px solid #ddd;
-                    box-shadow: 0 0 5px #ddd;
-                    left: 168px;
-                    top: 29px;
+            background: url(../images/loginRight.jpg) no-repeat;
+            width: 462px;
+            height: 85px;
+        }
+    }
+    .head-container::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+    
+// 登录内容区
+
+.login-content{
+    width: 964px;
+    margin: 40px auto;
+    .login-left{
+        float: left;
+    }
+    .login-right{
+        float: right;
+        width: 352px;
+        box-shadow: -3px 0 10px #ddd;
+        box-sizing: border-box;
+        padding:  0 24px;
+        .content-tit{
+            .tit{
+                font-size: 20px;
+                font-weight: bold;
+                color: #e3129a;
+                display: inline-block;
+                margin: 10px 20px 30px 0;
+            }
+            .notes{
+                display: inline-block;
+                font-size: 12px;
+                span{
+                    color:#969696;
                 }
-                .more{
-                    display: none;
-                    position: absolute;
-                    background: white;
-                    box-sizing: border-box;
-                    padding:10px;
-                    border: 1px solid #ddd;
-                    box-shadow: 0 0 5px #ddd;
-                    left: 306px;
-                    top: 29px;
-                    .sina{
-                        display: none;
-                        position: absolute;
-                        background: white;
-                        left: -108px;
-                        top: -20px;
-                        padding: 10px;
-                        border: 1px solid #ddd;
-                        box-shadow: 0 0 5px #ddd;
-                    }
-                    .weixin{
-                        display: none;
-                        position: absolute;
-                        background: white;
-                        left: -108px;
-                        top: 4px;
-                        padding: 10px;
-                        border: 1px solid #ddd;
-                        box-shadow: 0 0 5px #ddd;
-                    }
-                    .tengxun{
-                        display: none;
-                        position: absolute;
-                        background: white;
-                        left: -108px;
-                        top: 68px;
-                        padding: 10px;
-                        border: 1px solid #ddd;
-                        box-shadow: 0 0 5px #ddd;
-                    }
-                    .renren{
-                        display: none;
-                        position: absolute;
-                        background: white;
-                        left: -108px;
-                        top: 100px;
-                        padding: 10px;
-                        border: 1px solid #ddd;
-                        box-shadow: 0 0 5px #ddd;
-                    }
-                }
-            };
-            div.phone
-            {
-                
                 a{
-                    color: #ed145b;
-                    display: inline-block;
-                    border-left: 1px solid #ddd;
-                    border-right: 1px solid #ddd;
-                    width: 80px;
-                    height: 20px;
-                    margin-top: 5px;
-                    text-align: center;
-                    line-height: 20px;
-                    
+                    color:#ed145b;
                 }
             }
-            
         }
-        .head-right::after{
-            content: "";
-            clear: both;
-            display: block;
+        .login-select{
+            margin-bottom: 10px;
+        }
+        .login-phone{
+            // display: none;
+            input.username{
+                width: 298px;
+                height:40px;
+                border: 1px solid #ddd;
+            }
+            .moveCode{
+                margin: 10px 0;
+                input{
+                    width: 135px;
+                    height:40px;
+                    border: 1px solid #ddd;
+                }
+                button{
+                    width: 150px;
+                    height:40px;
+                    border: 1px solid #ddd;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .login-common{
+            display: none;
+            p{
+                visibility: hidden;
+                font-size: 8px;
+            }
+            p.show{
+                visibility:visible;
+                color: #969696;
+            }
+            p.success{
+                visibility:visible;
+                color: blue;
+            }
+            p.error{
+                visibility:visible;
+                color: red;
+            }
+            input{
+                width: 298px;
+                height:40px;
+                border: 1px solid #ddd;
+                margin: 10px 0;
+            }
+            .drag{
+                width: 298px;
+                height:40px;
+                background: #e8e8e8;
+                .block{
+                    display: inline-block;
+                    height:39px;
+                    width: 39px;
+                    text-align: center;
+                    line-height: 40px;
+                    background: white;
+                    border:1px solid #ddd;
+                    box-shadow: 0 0 5px #ddd;
+                    margin-right: 20px;
+                }
+            }
+            .login-auto{
+                font-size: 10px;
+                height: 10px;
+                line-height: 10px;
+                input{
+                    height: 10px;
+                    width: 10px;
+                }
+                label{
+                    margin-right: 150px;
+                }
+                a{
+                    margin-left: 20px;
+                }
+            }
+        }
+        .submit{
+            margin: 30px 0 20px 0;
+            width: 298px;
+            height:40px;
+            background: #e3129a;
+        }
+        .more{
+            margin-bottom: 20px;
+        }
+        ul{
+            width:298px;
+            height: 37px;
+            background: url(../images/loginMethod.png) no-repeat;
+            a{
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                margin-right: 20px;
+                line-height: 25px;
+            }
+            .last{
+                margin: -17px;
+            }
         }
     }
 }
-
+.login-content::after{
+    content: "";
+    display: block;
+    clear: both;
+}

@@ -182,10 +182,16 @@ header{
         .serch{
             .serch-center{
                 margin-top: 10px;
+                position: relative;
                 input{
                     width: 436px;
                     height: 38px;
                     border: 3px solid #ed145b;
+                }
+                .serch-content{
+                    position: absolute;
+                    top: 46px;
+                    left: 0;
                 }
                 button{
                     width: 100px;

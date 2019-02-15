@@ -24,4 +24,30 @@ var mySwiper = new Swiper ('.swiper-container', {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
-  })     
+  }) 
+  
+  
+  // 搜索
+
+var timer = null;
+var $input = $(".serch-center>input");
+$input.on("input",function(){
+  // 节流
+  if(timer !== null) return false;
+  timer = setTimeout(() => {
+
+    var url = `https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${$input.val()}&json=1&p=3&sid=1422_21089_28131_26350_28266&req=2&csor=2`;
+    $.ajax({
+      url : url,
+      dataType : "jsonp" ,
+      success : function(res){
+        console.log(res);
+      }
+    })
+
+    // console.log($input.val());
+    clearTimeout(timer);
+    timer = null;
+  }, 100);
+})
+

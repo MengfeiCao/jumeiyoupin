@@ -1,0 +1,203 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0; }
+  
+  body {
+    background: #fff;
+    color: #555;
+    font-size: 14px;
+    font-family: Verdana, Arial, Helvetica, sans-serif; }
+  
+  td, th, caption {
+    font-size: 14px; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%; }
+  
+  address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal; }
+  
+  a {
+    color: #555;
+    text-decoration: none; }
+  
+  img {
+    border: none;
+    vertical-align: middle; }
+  
+  ol, ul, li {
+    list-style: none; }
+  
+  input, textarea, select, button {
+    font: 14px Verdana,Helvetica,Arial,sans-serif; }
+  
+  table {
+    border-collapse: collapse; }
+  
+  html {
+    overflow-y: scroll; }
+  
+  .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  
+  .clearfix {
+    *zoom: 1; }
+  
+  body, html {
+    width: 100%;
+    height: 100%; }
+  
+  header .head-container {
+    width: 964px;
+    margin: 0 auto; }
+    header .head-container .head-logo {
+      float: left; }
+    header .head-container .head-right {
+      float: right;
+      background: url(../images/loginRight.jpg) no-repeat;
+      width: 462px;
+      height: 85px; }
+  
+  header .head-container::after {
+    content: "";
+    display: block;
+    clear: both; }
+  
+  .login-content {
+    width: 964px;
+    margin: 40px auto; }
+    .login-content .login-left {
+      float: left; }
+    .login-content .login-right {
+      float: right;
+      width: 352px;
+      box-shadow: -3px 0 10px #ddd;
+      box-sizing: border-box;
+      padding: 0 24px; }
+      .login-content .login-right .content-tit .tit {
+        font-size: 20px;
+        font-weight: bold;
+        color: #e3129a;
+        display: inline-block;
+        margin: 10px 20px 30px 0; }
+      .login-content .login-right .content-tit .notes {
+        display: inline-block;
+        font-size: 12px; }
+        .login-content .login-right .content-tit .notes span {
+          color: #969696; }
+        .login-content .login-right .content-tit .notes a {
+          color: #ed145b; }
+      .login-content .login-right .login-select {
+        margin-bottom: 10px; }
+      .login-content .login-right .login-phone input.username {
+        width: 298px;
+        height: 40px;
+        border: 1px solid #ddd; }
+        
+        .login-phone p{
+          visibility: hidden;
+          font-size: 10px;
+          color: #999;
+        }
+        .login-phone p.show{
+          visibility:visible;
+          font-size: 10px;
+          color: #999;
+        }
+          
+        
+        .login-phone p.error{
+          visibility:visible;
+          font-size: 10px;
+          color: red;
+        }
+        .login-phone p.success{
+          visibility:visible;
+          font-size: 10px;
+          color: blue;
+        }
+
+        
+        .password,.rePassword{
+          width: 298px;
+          height: 40px;
+          border: 1px solid #ddd; 
+          margin: 10px auto;
+        }
+
+      .login-content .login-right .login-phone .moveCode {
+        margin: 10px 0; }
+        .login-content .login-right .login-phone .moveCode input {
+          width: 135px;
+          height: 40px;
+          border: 1px solid #ddd; }
+        .login-content .login-right .login-phone .moveCode button {
+          width: 150px;
+          height: 40px;
+          border: 1px solid #ddd;
+          margin-left: 10px; }
+      .login-content .login-right .login-common {
+        display: none; }
+        .login-content .login-right .login-common input {
+          width: 298px;
+          height: 40px;
+          border: 1px solid #ddd;
+          margin: 10px 0; }
+        .login-content .login-right .login-common .drag {
+          width: 298px;
+          height: 40px;
+          background: #e8e8e8; }
+          .login-content .login-right .login-common .drag .block {
+            display: inline-block;
+            height: 39px;
+            width: 39px;
+            text-align: center;
+            line-height: 40px;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px #ddd;
+            margin-right: 20px; }
+        .login-content .login-right .login-common .login-auto {
+          font-size: 10px;
+          height: 10px;
+          line-height: 10px; }
+          .login-content .login-right .login-common .login-auto input {
+            height: 10px;
+            width: 10px; }
+          .login-content .login-right .login-common .login-auto label {
+            margin-right: 150px; }
+          .login-content .login-right .login-common .login-auto a {
+            margin-left: 20px; }
+      .login-content .login-right #submit {
+        margin: 30px 0 20px 0;
+        width: 298px;
+        height: 40px;
+        background: #e3129a; }
+      .login-content .login-right .more {
+        margin: 0 0 20px 180px;;
+        color: #e3129a;
+       }
+      .login-content .login-right ul {
+        width: 298px;
+        height: 37px;
+        background: url(../images/loginMethod.png) no-repeat; }
+        .login-content .login-right ul a {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          margin-right: 20px;
+          line-height: 25px; }
+        .login-content .login-right ul .last {
+          margin: -17px; }
+  
+  .login-content::after {
+    content: "";
+    display: block;
+    clear: both; }
+  

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./stylesheets/register.css">
+    <title>注册聚美</title>
+</head>
+<body>
+        <header>
+                <div class="head-container">
+                    <div class="head-logo">
+                        <a><img src="./images/logo.jpg" alt=""></a>
+                    </div>
+                    <div class="head-right">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </header>
+        
+            <div class="login-content">
+                <div class="login-left">
+                    <img src="./images/loginBig.jpg" alt="">
+                </div>
+                <form class="login-right">
+                    <div class="content-tit">
+                        <div class="tit">用户注册</div>
+                        <div class="notes">
+                            <span>已有账号</span>
+                            <a href="">在此登录</a>
+                        </div>
+                    </div>
+                    
+                    <div class="login-phone">
+                        <input class="username" type="text" placeholder="手机号">
+                        <p class="notes-username">请输入11位手机号</p>
+                        <div class="moveCode">
+                            <input class="yanzhengma" type="text" placeholder="短信校验码">
+                            <button>获取短信校验码</button>
+                        </div>
+                        <p class="notes-check">请输入6位校验码</p>
+                        <input class="password" type="password" placeholder="密码">
+                        <p class="notes-password">6-16个字符，建议使用字母加数字或符号组合</p>
+                        <input class="rePassword" type="password" placeholder="重复密码">
+                        <p class="notes-rePassword">请再次输入密码</p>
+
+                    </div>
+        
+                    <button id="submit">同意协议并注册</button>
+                    <div><a class="more" href="">聚美优品用户协议</a></div>
+                </form>
+            </div>
+</body>
+<script src="./javascripts/Mycommon.js"></script>
+<script src="./javascripts/register.js"></script>
+
+</html>

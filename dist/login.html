@@ -4,96 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../stylesheets/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
-    <title>聚美优品</title>
+    <link rel="stylesheet" href="./stylesheets/login.css">
+    <title>登录聚美</title>
 </head>
 <body>
     <header>
-        <!-- 顶部 -->
         <div class="head-container">
-            <div class="head-left">
-                <p>欢迎来到聚美优品！</p>
-                <div><a href="">请登录</a></div>
-                <div><a href="">快速注册</a></div>
+            <div class="head-logo">
+                <a><img src="./images/logo.jpg" alt=""></a>
             </div>
             <div class="head-right">
-                <div><a href="">正品保证</a></div>
-                <div><a href="">订单查询</a></div>
-                <div><a href="">❤收藏的名牌</a></div>
-                <div><a href="">我的聚美</a>
-                    <ul class="myjumei">
-                        <li><a href="">我的订单</a></li>
-                        <li><a href="">我的现金券</a></li>
-                        <li><a href="">我的红包</a></li>
-                        <li><a href="">我的余额</a></li>
-                        <li><a href="">我的提现退款</a></li>
-                        <li><a href="">我的收藏</a></li>
-                        <li><a href="">我的心愿单</a></li>
-                        <li><a href="">会员中心</a></li>
-                        <li><a href="">礼品卡兑换</a></li>
-                    </ul>
-                </div>
-                
-                <div class="phone"><a href="">手机聚美</a></div>
-                <div><a href="">更多</a>
-                    <ul class="more">
-                        <li><a href="">邀请好友</a></li>
-                        <li><a href="">加入收藏</a></li>
-                        <li><a href="">新浪微博</a>
-                            <p class="sina"><img src="./images/sina_er.png" alt=""></p>
-                        </li>
-                        <li><a href="">聚美微信</a>
-                            <p class="weixin"><img src="./images/jumei_weixin_header1.png" alt=""></p>
-                        </li>
-                        <li><a href="">百度贴吧</a></li>
-                        <li><a href="">腾讯微博</a>
-                            <p class="tengxun"><img src="./images/qq_er.png" alt=""></p>
-                        </li>
-                        <li><a href="">人人公众主页</a>
-                            <p class="renren"><img src="./images/renren_er.png" alt=""></p>
-                        </li>
-                    </ul>
-                </div>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
             </div>
         </div>
-
-
     </header>
 
-
-    <!-- 搜索区 -->
-    <div class="serch-container">
-        <div class="logo"></div>
-        <div class="serch">
-            <div class="serch-center">
-                <input type="text">
-                <button>搜索</button>
+    <div class="login-content">
+        <div class="login-left">
+            <img src="./images/loginBig.jpg" alt="">
+        </div>
+        <form class="login-right">
+            <div class="content-tit">
+                <div class="tit">登录聚美</div>
+                <div class="notes">
+                    <span>还没有聚美账号？</span>
+                    <a href="">30秒完成注册</a>
+                </div>
             </div>
-            <ul>
-                <li><a href="">保湿</a></li>
-                <li><a href="">面膜</a></li>
-                <li><a href="">洗面奶</a></li>
-                <li><a href="">补水</a></li>
-                <li><a href="">香水</a></li>
-                <li><a href="">眼霜</a></li>
-                <li><a href="">口红</a></li>
-                <li><a href="">护肤套装</a></li>
-                <li><a href="">BB霜</a></li>
-            </ul>
-        </div>
-        <div class="cart">
-            <a href="">去购物车结算</a>
-            <p>购物车中还没有商品，<br>快去挑选心爱的商品吧！</p>
-        </div>
-    </div>
+            <div class="login-select">
+                <input type="radio" name="select" class="checked" checked>手机动态密码登录
+                <input type="radio" name="select">普通登录
+            </div>
 
-   
-    
-    
-     
+            <div class="login-phone">
+                <input class="username" type="text" placeholder="已注册的手机号">
+                <div class="moveCode">
+                    <input type="password" placeholder="动态密码">
+                    <button>获取手机动态密码</button>
+                </div>
+                <input type="checkbox">自动登录
+            </div>
+
+            <div class="login-common">
+                <input class="common-username" type="text" placeholder="已验证手机/邮箱/用户名">
+                <p>请输入登录名，登录名可能是您的手机号、邮箱或用户名</p>
+                <input class="common-password" type="password" placeholder="密码">
+                <p>请输入您的密码，您的密码可能是字母、数字或符号的组合</p>
+                <div class="drag">
+                    <div class="block">>></div>
+                    <span>按住滑块，拖动到最右边</span>
+                </div>
+                <div class="login-auto">
+                    <input type="checkbox" id="zidong" checked><label for="zidong">自动登录</label><a href="">忘记密码</a>
+                </div>
+            </div>
+
+            <button class="submit">登录</button>
+            <div class="more">你也可以使用以下账号登录</div>
+            <ul>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href="" class="last">更多</a>
+            </ul>
+        </form>
+    </div>
 
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-<script src="../javascripts/index.js"></script>
+<script src="./javascripts/Mycommon.js"></script>
+<script src="./javascripts/login.js"></script>
 </html>

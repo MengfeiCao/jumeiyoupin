@@ -16,13 +16,13 @@ const paths = {
         html : "./src/html/*.html",
         sass : "./src/sass/*.scss",
         js : "./src/javascripts/*.js",
-        img : "./src/images/*"
+        img : "./src/images/*",
     },
     dest : {
         html : "./dist",
         sass : "./dist/stylesheets",
         js : "./dist/javascripts",
-        img : "./dist/images"
+        img : "./dist/images",
     }
 }
 
@@ -78,6 +78,7 @@ gulp.task("img",()=>{
                 .pipe(gulp.dest(paths.dest.img))
                 .pipe(connect.reload());
 });
+
 
 gulp.task("watch",()=>{
     gulp.watch([paths.src.html],["html"]);
